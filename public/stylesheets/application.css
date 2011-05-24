@@ -1,0 +1,308 @@
+/* ID="auth" styles */
+
+#auth {
+  color: #B20000;
+}
+
+/* Users index table */
+
+#users_index {
+  border-collapse: collapse;
+}
+
+#users_index th {
+  background-color: #DDD;
+  color: #666;
+}
+
+#users_index th, td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+/* Main Body */
+
+body {
+  background-color: #000;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px;
+}
+
+a img {
+  border: none;
+}
+
+a {
+  color: #B20000;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+#container {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #F5F0EB;
+  padding: 20px 40px;
+  border: solid 1px black;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  margin-top: 20px;
+}
+
+#container h1 {
+  text-align: center;
+  text-shadow: 0.1em 0.1em 0.2em #5C3D1F;
+}
+
+/* Home page styles */
+
+#cade_pic {
+  text-align: center;
+}
+
+#home_text {
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px;
+}
+
+#home_text p {
+  text-indent: 20px;
+}
+
+/* home_tabs styles */
+
+#home_tabs ul { 
+  margin: 0; 
+  padding: 0; 
+}
+
+#home_tabs ul li { 
+  display: inline-block; 
+  background: #F5F0EB;
+  border-right: solid 1px; 
+}
+
+#home_tabs ul li a { 
+  display: block; 
+  padding: 5px; 
+  outline: none; 
+}
+
+#home_tabs ul li a { 
+  text-decoration: none; 
+}
+
+#home_tabs ul li a:hover { 
+  color: #000; 
+}
+
+#home_tabs ul li.active { 
+  background: #F5F0EB; 
+  padding-top: 5px; 
+  position: relative; 
+  top: 1px; 
+}
+
+#home_tabs ul li a.active { 
+  font-size: 15px;
+  font-weight: bold; 
+}
+
+#home_tabs .panel-container {
+  border: solid 1px; 
+  padding: 0 10px; 
+}
+
+/* Styles for Tabs */
+
+#logo {
+  float: left;
+  padding-top: 1em;
+  padding-left: 2em;
+}
+
+#tab_container {
+  float: right;
+  padding-top: 4em;
+  padding-right: 10em;
+}
+
+#tab_container ul { 
+  margin: 0; 
+  padding: 0; 
+}
+
+#tab_container ul li { 
+  display: inline-block;  
+  border-right: solid 1px #fff; 
+  border-bottom: none; 
+}
+
+#tab_container ul li a { 
+  display: block; 
+  padding: 5px; 
+  outline: none; 
+}
+
+#tab_container ul li a { 
+  text-decoration: none; 
+}
+
+#tab_container a:hover {
+  color: #fff;
+}
+
+/* Errors and Alerts */
+
+#flash_notice, #flash_error, #flash_alert {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+
+#flash_error, #flash_alert {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+
+.fieldWithErrors {
+  display: inline;
+}
+
+.error_messages {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+}
+
+.error_messages h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+.error_messages p {
+  margin: 8px 10px;
+}
+
+.error_messages ul {
+  margin: 0;
+}
+
+/* Calendar Styles */
+
+#calendar a {
+  color: #800000;
+}
+
+#calendar table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#calendar td,
+#calendar th {
+  font-family: "Lucida Grande",arial,helvetica,sans-serif;
+  font-size: 10px;
+  padding: 6px;
+  border: 1px solid #000;
+}
+
+#calendar th {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  width: 14.2857142857143%;
+}
+
+#calendar td {
+  background: #A37547;
+  color: #fff;
+  height: 80px;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+#calendar .notmonth {
+  color: #CCC;
+}
+
+#calendar #month {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#calendar #month a, #calendar #month a:hover {
+  text-decoration: none;
+  padding: 0 10px;
+  color: #999;
+}
+
+#calendar .today {
+  background-color: #1F140A;
+}
+
+#calendar ul {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  list-style: none;
+}
+
+#calendar li {
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+/* Gallery and Picture Styles */
+
+.gallery h2 {
+  margin-bottom: 2px;
+}
+
+.picture {
+  border: solid 1px #CCC;
+  padding: 10px 10px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.picture .name {
+  padding-top: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.picture .image_placeholder {
+  width: 200px;
+  height: 150px;
+  background-color: #B6B6B6;
+}
+
+.picture .actions {
+  font-size: 10px;
+  text-align: center;
+  color: #777;
+}

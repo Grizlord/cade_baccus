@@ -1,0 +1,20 @@
+<%= form_for @show do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :venue %><br />
+    <%= f.text_field :venue %>
+  </p>
+  <p>
+    <%= f.label :venue_url %><br />
+    <%= f.text_field :venue_url %>
+  </p>
+  <p>
+    <%= f.label :show_date %><br />
+    <%= f.text_field :show_date %>
+  </p>
+  <p>
+    <%= f.label :show_time %><br />
+    <%= f.time_select :show_time %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

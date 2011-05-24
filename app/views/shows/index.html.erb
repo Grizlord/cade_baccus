@@ -1,0 +1,26 @@
+<% title "Gigs" %>
+
+<div id="calendar">
+  <h2 id="month">
+    <%= link_to "<", :month => (@date.beginning_of_month-1).strftime("%Y-%m") %>
+    <%=h @date.strftime("%B %Y") %>
+    <%= link_to ">", :month => (@date.end_of_month+1).strftime("%Y-%m") %>
+  </h2>
+  <% calendar_for @shows, :year => @date.year, :month => @date.month do |calendar| %>
+    <%= calendar.head('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday') %>
+    <% calendar.day(:day_method => :show_date) do |date, shows| %>
+      <%= date.day %>
+      <ul>
+        <% for show in shows %>
+          <li><%= link_to show.venue, show %></li>
+        <% end %>
+      </ul>
+    <% end %>
+  <% end %>
+</div>
+
+<p>
+  <% if can? :create, @show %>
+  <%= link_to "New Show", new_show_path %>
+  <% end %>
+</p>

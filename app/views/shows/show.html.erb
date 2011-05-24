@@ -1,0 +1,24 @@
+<% title "The Low Down" %>
+
+<p>
+  <strong>Venue:</strong>
+  <%= link_to @show.venue, @show.venue_url, :target => "_blank" %>
+</p>
+<p>
+  <strong>Date:</strong>
+  <%= display_date(@show.show_date) %>
+</p>
+<p>
+  <strong>Time:</strong>
+  <%= display_time(@show.show_time) %>
+</p>
+
+<p>
+  <% if can? :update, @show %>
+  <%= link_to "Edit", edit_show_path(@show) %> |
+  <% end %>
+  <% if can? :destroy, @show %>
+  <%= link_to "Delete", @show, :confirm => 'Are you sure?', :method => :delete %> |
+  <% end %>
+  <%= link_to "Back to Calendar", shows_path %>
+</p>

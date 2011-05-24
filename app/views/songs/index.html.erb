@@ -1,0 +1,33 @@
+<% title "Songs" %>
+
+<div id="sm2-container">
+  <!-- SM2 flash goes here -->
+</div>
+
+<ul class="graphic">
+  <% for song in @songs %>
+      <li><%= link_to song.name, song.track_url, {:class => 'sm2_link'} %></li>
+  <% end %>
+</ul>
+
+<p>
+  <% if can? :create, @song %>
+  <%= link_to "New Song", new_song_path %>
+  <% end %>
+</p><br />
+
+<% if can? :destroy, @song %>
+  <table id="users_index">
+    <tr>
+      <th>Name</th>
+    </tr>
+    <% for song in @songs %>
+    <tr>
+      <td><%= song.name %></td>    
+      <td><%= link_to 'Delete Song', song, :confirm => 'Are you sure?', :method => :delete %></td>
+      <td><%= link_to "Song Info", song %></td>
+    </tr>
+    <% end %>
+  </table>
+<% end %>
+

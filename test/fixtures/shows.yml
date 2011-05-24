@@ -1,0 +1,9 @@
+one:
+  venue: MyString
+  show_date: 2011-04-30
+  show_time: 2011-04-30 21:42:22
+
+two:
+  venue: MyString
+  show_date: 2011-04-30
+  show_time: 2011-04-30 21:42:22

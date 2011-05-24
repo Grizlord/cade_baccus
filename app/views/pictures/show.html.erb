@@ -1,0 +1,12 @@
+<% title @picture.name %>
+
+<div class="pictures">
+  <div class="picture">
+    <%= image_tag @picture.image_url(:big_thumb).to_s %>
+  </div>
+<div class="clear"></div>
+</div>
+
+<p>
+  <%= link_to "Back to Gallery", @picture.gallery %>
+</p>

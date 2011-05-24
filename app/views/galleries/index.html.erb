@@ -1,0 +1,14 @@
+<% title "Galleries" %>
+
+<% for gallery in @galleries %>
+  <div class="gallery">
+    <h2><%= link_to gallery.name, gallery %></h2>
+    Pictures: <%= gallery.pictures.size %>
+  </div>
+<% end %>
+
+<p>
+<% if can? :create, @galleries %>
+  <%= link_to "New Gallery", new_gallery_path %>
+<% end %>
+</p>
