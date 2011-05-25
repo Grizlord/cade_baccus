@@ -61,8 +61,9 @@ a {
 
 /* Home page styles */
 
-#cade_pic {
-  text-align: center;
+#slider {
+  position: relative;
+  left: 15em;
 }
 
 #home_text {
@@ -76,6 +77,10 @@ a {
 
 /* home_tabs styles */
 
+#home_tabs {
+  text-align: center;
+}
+
 #home_tabs ul { 
   margin: 0; 
   padding: 0; 
@@ -84,7 +89,13 @@ a {
 #home_tabs ul li { 
   display: inline-block; 
   background: #F5F0EB;
-  border-right: solid 1px; 
+  border-left: solid 1px; 
+  position: relative;
+  left: 15em;
+}
+
+#home_tabs ul li:first-child  {
+  border-left: hidden;
 }
 
 #home_tabs ul li a { 
@@ -139,8 +150,12 @@ a {
 
 #tab_container ul li { 
   display: inline-block;  
-  border-right: solid 1px #fff; 
+  border-left: solid 1px #fff; 
   border-bottom: none; 
+}
+
+#tab_container ul li:first-child  {
+  border-left: hidden;
 }
 
 #tab_container ul li a { 
