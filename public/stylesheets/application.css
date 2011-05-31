@@ -61,17 +61,12 @@ a {
 
 /* Home page styles */
 
-#slider {
-  position: relative;
-  left: 15em;
-}
-
-#home_text {
-  font-family: Verdana, Helvetica, Arial;
+#about_music, #about_cade {
+  font:14px/1.6 Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
   font-size: 14px;
 }
 
-#home_text p {
+#about_music p {
   text-indent: 20px;
 }
 
