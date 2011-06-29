@@ -5,10 +5,10 @@ $(function() {
 });
 
 $(document).ready(function(){
-    $('#home_tabs').easytabs();
+    $('#about_tabs').easytabs();
 });
 
-$(window).load(function() {
+$(document).ready(function() {
     $('#slider').nivoSlider({
         effect:'random', // Specify sets like: 'fold,fade,sliceDown'
         slices:15, // For slice animations
@@ -17,7 +17,7 @@ $(window).load(function() {
         animSpeed:250, // Slide transition speed
         pauseTime:6000, // How long each slide will show
         startSlide:0, // Set starting Slide (0 index)
-        directionNav:false, // Next & Prev navigation
+        directionNav:true, // Next & Prev navigation
         directionNavHide:true, // Only show on hover
         controlNav:false, // 1,2,3... navigation
         controlNavThumbs:false, // Use thumbnails for Control Nav
@@ -28,8 +28,8 @@ $(window).load(function() {
         pauseOnHover:true, // Stop animation while hovering
         manualAdvance:false, // Force manual transitions
         captionOpacity:0.8, // Universal caption opacity
-        prevText: 'Prev', // Prev directionNav text
-        nextText: 'Next', // Next directionNav text
+        prevText: '<<', // Prev directionNav text
+        nextText: '>>', // Next directionNav text
         beforeChange: function(){}, // Triggers before a slide transition
         afterChange: function(){}, // Triggers after a slide transition
         slideshowEnd: function(){}, // Triggers after all slides have been shown
@@ -37,3 +37,16 @@ $(window).load(function() {
         afterLoad: function(){} // Triggers when slider has loaded
     });
 });
+
+$(document).ready(function(){
+  $("#throbber").throbber("click", {image: "/images/ajax-loader.gif"});
+});
+
+$(function() {
+    $(".show_carousel").jCarouselLite({
+        btnNext: ".next",
+        btnPrev: ".prev",
+        visible: 4,
+        circular: "true"
+    });
+}); 

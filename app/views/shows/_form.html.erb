@@ -16,5 +16,9 @@
     <%= f.label :show_time %><br />
     <%= f.time_select :show_time %>
   </p>
-  <p><%= f.submit %></p>
+  <p>
+    <%= f.label "Show Notes" %><br />
+    <%= f.text_area :notes, :rows => 8 %>
+  </p>
+  <p><%= f.submit :id => "throbber" %></p>
 <% end %>

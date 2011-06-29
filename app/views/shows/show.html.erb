@@ -1,19 +1,23 @@
 <% title "The Low Down" %>
 
-<p>
-  <strong>Venue:</strong>
+<div id="show_page">
+  <h3>Venue:</h3>
   <%= link_to @show.venue, @show.venue_url, :target => "_blank" %>
-</p>
-<p>
-  <strong>Date:</strong>
-  <%= display_date(@show.show_date) %>
-</p>
-<p>
-  <strong>Time:</strong>
-  <%= display_time(@show.show_time) %>
-</p>
 
-<p>
+  <h3>Date:</h3>
+  <%= display_date(@show.show_date) %>
+
+  <h3>Time:</h3>
+  <%= display_time(@show.show_time) %>
+
+  <h3>Notes from the man:</h3>
+  <%= @show.notes %>
+  <div id="show_img">
+    <%= image_tag "/images/now_playing_sml.png" %>
+  </div>
+</div><br />
+
+<div>
   <% if can? :update, @show %>
   <%= link_to "Edit", edit_show_path(@show) %> |
   <% end %>
@@ -21,4 +25,4 @@
   <%= link_to "Delete", @show, :confirm => 'Are you sure?', :method => :delete %> |
   <% end %>
   <%= link_to "Back to Calendar", shows_path %>
-</p>
+</div>

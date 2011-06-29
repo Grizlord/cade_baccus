@@ -1,0 +1,28 @@
+<% title "Contact Cade" %>
+
+<p>If you want Cade to play at your venue or want info on how to purchase his latest CD leave a detailed message using the form below.</p>
+
+<%= form_for @contact do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :subject %><br />
+    <%= f.text_field :subject %>
+  </p>
+  <p>
+    <%= f.label :message %><br />
+    <%= f.text_area :message, :rows => 10, :cols => 50 %>
+  </p>
+  <p><%= f.submit "Send Message", :id => "throbber" %></p>
+<% end %>
+
+<% if can? :destroy, @contact %>
+<p><%= link_to "Contact List", contacts_path %></p>
+<% end %>

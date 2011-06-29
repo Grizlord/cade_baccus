@@ -102,7 +102,7 @@ ul.graphic li a.sm2_link {
  padding-left:22px;
  min-height:16px;
  vertical-align: middle;
- background-color:#A37547;
+ background-color:#808080;
  -moz-border-radius:3px;
  -webkit-border-radius:3px;
  border-radius:3px;
@@ -134,22 +134,22 @@ ul.graphic li a.sm2_link:hover {
 
 ul.graphic li a.sm2_link:hover {
  /* default hover color, if you'd like.. */
- background-color:#5C3D1F;
+ background-color:#000;
  color:#fff;
 }
 
 ul.graphic li a.sm2_paused {
- background-color:#D6C2AD;
+ background-color:#cccccc;
 }
 
 ul.graphic li a.sm2_paused:hover {
- background:#5C3D1F url(/images/icon_play.png) no-repeat 3px 50%;
+ background:#000 url(/images/icon_play.png) no-repeat 3px 50%;
  _background-image:url(/images/icon_play.gif);
 }
 
 ul.graphic li a.sm2_playing,
 ul.graphic li a.sm2_playing:hover {
- background:#5C3D1F url(/images/icon_pause.png) no-repeat 3px 50%;
+ background:#000 url(/images/icon_pause.png) no-repeat 3px 50%;
  _background-image:url(/images/icon_pause.gif);
  text-decoration:none;
 }
