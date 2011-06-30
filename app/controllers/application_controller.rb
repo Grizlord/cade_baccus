@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  helper :layout
   include ControllerAuthentication
   protect_from_forgery
   rescue_from CanCan::AccessDenied do |exception|

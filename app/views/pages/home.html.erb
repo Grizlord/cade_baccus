@@ -6,7 +6,7 @@
   <ul>
   <% for show in @shows %>
     <li>
-      <h3><%= link_to show.venue, show %></h3><br />
+      <strong><%= link_to show.venue, show %></strong><br />
       <%= display_date(show.show_date) %>
     </li>
     <% end %>
