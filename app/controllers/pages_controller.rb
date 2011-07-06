@@ -1,7 +1,6 @@
-class PagesController < ApplicationController
+class PagesController < ApplicationController 
   def home
-    @shows = Show.find(:all)
-    @date = params[:month] ? Date.parse(params[:month].gsub('-', '/')) : Date.today
+    @shows = Show.find(:all, :order => :show_date)
   end
   
   def about
