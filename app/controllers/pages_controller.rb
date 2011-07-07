@@ -1,9 +1,11 @@
 class PagesController < ApplicationController 
   def home
-    @shows = Show.find(:all, :order => :show_date)
+    @shows = Show.upcoming
   end
   
   def about
-    @pictures = Picture.find(:all)
+  end
+  
+  def admin
   end
 end

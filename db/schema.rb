@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110608153139) do
+ActiveRecord::Schema.define(:version => 20110707051018) do
 
   create_table "contacts", :force => true do |t|
     t.string   "name"
@@ -60,6 +60,13 @@ ActiveRecord::Schema.define(:version => 20110608153139) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "admin"
+  end
+
+  create_table "videos", :force => true do |t|
+    t.string   "title"
+    t.string   "embed_code"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

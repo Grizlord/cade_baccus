@@ -1,0 +1,19 @@
+<% title "Videos" %>
+
+<div id="videos">
+  <% for video in @videos %>
+    <div class="video">
+      <%= raw(video.embed_code) %>
+        <div class="name"><%= video.title %></div>
+        <div class="actions">
+          <% if can? :update, @video %>
+          <%= link_to "Edit", edit_video_path(video) %>
+          <% end %>
+          <% if can? :destroy, @video %>
+          <%= link_to "Destroy", video, :confirm => 'Are you sure?', :method => :delete %>
+          <% end %>
+        </div>
+    </div>
+  <% end %>
+  <div class="clear"></div>
+</div>

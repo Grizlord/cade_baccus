@@ -22,7 +22,3 @@
   </p>
   <p><%= f.submit "Send Message", :id => "throbber" %></p>
 <% end %>
-
-<% if can? :destroy, @contact %>
-<p><%= link_to "Contact List", contacts_path %></p>
-<% end %>

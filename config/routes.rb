@@ -1,9 +1,13 @@
 CadeBaccus::Application.routes.draw do
+  resources :videos
+
   resources :contacts
 
   get "pages/home"
   
   get "pages/about"
+  
+  get "pages/admin"
 
   resources :songs
 

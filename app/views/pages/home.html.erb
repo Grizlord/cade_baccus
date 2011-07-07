@@ -14,9 +14,6 @@
   <button class="prev">Prev</button>
   <button class="next">Next</button>
   <%= link_to "Calendar View", shows_path %>
-    <% if can? :create, @show %>
-    <%= link_to "New Show", new_show_path %>
-    <% end %>
 </div>
 <div id="facebook">
   <%= link_to image_tag("/images/facebook.png"), "http://www.facebook.com/cade.baccus", :target => "_blank" %>

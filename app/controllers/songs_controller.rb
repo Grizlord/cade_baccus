@@ -14,7 +14,7 @@ class SongsController < ApplicationController
 
   def create
     if @song.save
-      redirect_to @song, :notice => "Successfully created song."
+      redirect_to songs_url, :notice => "Successfully created song."
     else
       render :action => 'new'
     end
@@ -25,7 +25,7 @@ class SongsController < ApplicationController
 
   def update
     if @song.update_attributes(params[:song])
-      redirect_to @song, :notice  => "Successfully updated song."
+      redirect_to songs_url, :notice  => "Successfully updated song."
     else
       render :action => 'edit'
     end

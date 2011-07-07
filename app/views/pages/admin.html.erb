@@ -1,0 +1,35 @@
+<% title "Site Administration" %>
+
+<div class=" admin_nav">
+  <ul>
+    <li>
+      <% if can? :create, @show %>
+        <%= link_to "New Show", new_show_path %>
+      <% end %>
+    </li>
+    <li>
+      <% if can? :create, @galleries %>
+        <%= link_to "New Gallery", new_gallery_path %>
+      <% end %>
+    </li>
+    <li>
+      <% if can? :create, @song %>
+        <%= link_to "New Song", new_song_path %>
+      <% end %>
+    </li>
+    <li>
+      <% if can? :create, @video %>
+        <%= link_to "Embed Video", new_video_path %>
+      <% end %>
+    </li>
+    <li>
+      <% if can? :destroy, @contact %>
+        <%= link_to "Contact List", contacts_path %>
+      <% end %>
+    </li>
+    <li>
+      <% if can? :destroy, @user %>
+        <%= link_to "Users/Songs Admin", users_path %>
+      <% end %>
+    </li>
+  </ul> 
