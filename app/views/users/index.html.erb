@@ -37,7 +37,8 @@
       </tr>
       <% for song in @songs %>
       <tr>
-        <td><%= song.name %></td>    
+        <td><%= song.name %></td>
+        <td><%= link_to "Edit", edit_song_path(song) %></td>    
         <td><%= link_to 'Delete Song', song, :confirm => 'Are you sure?', :method => :delete %></td>
         <td><%= link_to "Song Info", song %></td>
       </tr>

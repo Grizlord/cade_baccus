@@ -3,6 +3,9 @@
 <% for gallery in @galleries %>
   <div class="gallery">
     <h2><%= link_to gallery.name, gallery %></h2>
-    Pictures: <%= gallery.pictures.size %>
+    Pictures: <%= gallery.pictures.size %><br />
+    <% if can? :update, @gallery %>
+    <%= link_to "Edit", edit_gallery_path(gallery) %>
+    <% end %>
   </div>
 <% end %>

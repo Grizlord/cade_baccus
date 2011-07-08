@@ -7,7 +7,7 @@
         <div class="name"><%= video.title %></div>
         <div class="actions">
           <% if can? :update, @video %>
-          <%= link_to "Edit", edit_video_path(video) %>
+          <%= link_to "Edit", edit_video_path(video) %> |
           <% end %>
           <% if can? :destroy, @video %>
           <%= link_to "Destroy", video, :confirm => 'Are you sure?', :method => :delete %>
